@@ -1,0 +1,9 @@
+{
+    "date": "2021-10-07 17:58:46",
+    "name": "BPMN",
+    "format": "xml",
+    "files": ["BPMN.xml"],
+    "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-bpmn.git"}},
+    "version": "5",
+    "platform": "5.2.0-beta"
+}
