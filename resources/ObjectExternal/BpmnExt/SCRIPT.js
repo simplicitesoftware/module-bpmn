@@ -1,17 +1,39 @@
-var BpmnExt = (function() {
+let BpmnExt = (function() {
+	let editor;
+
 	function render(params, data) {
-		console.log(params);
-		console.log(data);
-		const div = $('#bpmnext');
+		const div = $('#bpmn');
 		try {
-			const editor = new BpmnJS({ container: div, height: 500 });
-			editor.importXML(data.bpmn).then(() => {
+			editor = new BpmnJS({ container: div, height: 500 });
+			editor.importXML(data.xml).then(() => {
 				console.log('Diagram imported');
+			}).catch(e => {
+				throw e;
 			});
-		} catch (err) {
-			div.text(err.message);
+		} catch (e) {
+			div.text(e.message);
 		}
 	}
 
-	return { render: render };
+	function saveXML(success, failure) {
+		editor.saveXML({ format: true }).then(res => {
+			success && success(res.xml);
+		}).catch(e => {
+			failure && failure(e);
+		});
+	}
+
+	function saveSVG(success, failure) {
+		editor.saveSVG().then(res => {
+			success && success(res.svg);
+		}).catch(e => {
+			failure && failure(e);
+		});
+	}
+
+	return {
+		render: render,
+		saveXML: saveXML,
+		saveSVG: saveSVG
+	};
 })();

@@ -198,6 +198,12 @@ paths:
       - schema:
           type: string
         in: query
+        name: bpmnObjImage
+        description: Search filter for Image
+        required: false
+      - schema:
+          type: string
+        in: query
         name: bpmnObjDescription
         description: Search filter for Description
         required: false
@@ -206,12 +212,6 @@ paths:
         in: query
         name: bpmnObjDocument
         description: Search filter for Document
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: bpmnObjImage
-        description: Search filter for Image
         required: false
       tags:
       - BpmnObj

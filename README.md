@@ -23,9 +23,9 @@ Integration test for `bpmn-js` lib.
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `bpmnObjName`                                                | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `bpmnObjImage`                                               | image                                    |          | yes       |          | -                                                                                |
 | `bpmnObjDescription`                                         | html(1000000)                            |          | yes       |          | -                                                                                |
 | `bpmnObjDocument`                                            | document                                 |          | yes       |          | -                                                                                |
-| `bpmnObjImage`                                               | image                                    |          | yes       |          | -                                                                                |
 
 `BpmnExt` external object definition
 ------------------------------------

@@ -31,7 +31,7 @@ public class BpmnExt extends com.simplicite.webapp.web.ResponsiveExternalObject 
 				data = new String(getResourceContent(Resource.TYPE_XML, "BPMN"));
 			}
 			
-			return new JSONObject().put("bpmn", data);
+			return new JSONObject().put("xml", data);
 		} catch (Exception e) {
 			AppLog.error(null, e, getGrant());
 			return null;

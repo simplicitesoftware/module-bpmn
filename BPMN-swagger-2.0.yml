@@ -76,6 +76,11 @@ paths:
         type: string
         required: false
       - in: query
+        name: bpmnObjImage
+        description: Search filter for Image
+        type: string
+        required: false
+      - in: query
         name: bpmnObjDescription
         description: Search filter for Description
         type: string
@@ -83,11 +88,6 @@ paths:
       - in: query
         name: bpmnObjDocument
         description: Search filter for Document
-        type: string
-        required: false
-      - in: query
-        name: bpmnObjImage
-        description: Search filter for Image
         type: string
         required: false
       tags:
