@@ -76,18 +76,13 @@ paths:
         type: string
         required: false
       - in: query
-        name: bpmnObjImage
-        description: Search filter for Image
+        name: bpmnObjXml
+        description: Search filter for Diagram (XML)
         type: string
         required: false
       - in: query
-        name: bpmnObjDescription
-        description: Search filter for Description
-        type: string
-        required: false
-      - in: query
-        name: bpmnObjDocument
-        description: Search filter for Document
+        name: bpmnObjSvg
+        description: Search filter for Diagram (SVG)
         type: string
         required: false
       tags:
@@ -322,21 +317,18 @@ definitions:
   BpmnObj:
     type: object
     properties:
-      bpmnObjDescription:
-        description: Description
-        type: string
-      bpmnObjDocument:
-        description: Document
-        type: object
-      bpmnObjImage:
-        description: Image
-        type: object
       bpmnObjName:
         description: Name
         type: string
       row_id:
         description: Unique technical row ID
         type: string
+      bpmnObjSvg:
+        description: Diagram (SVG)
+        type: object
+      bpmnObjXml:
+        description: Diagram (XML)
+        type: object
   TreeviewData:
     type: object
     properties:

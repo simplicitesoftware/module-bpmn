@@ -19,9 +19,10 @@ public class BpmnExt extends com.simplicite.webapp.web.ResponsiveExternalObject 
 			String data = null;
 
 			String obj = params.getParameter("object");
-			if (!Tool.isEmpty(obj)) {
+			String field = params.getParameter("field");
+			if (!Tool.isEmpty(obj) && !Tool.isEmpty(field)) {
 				ObjectDB o = getGrant().getObject(params.getParameter("inst"), obj); // Use same instance
-				ObjectField doc = o.getField("bpmnObjDocument");
+				ObjectField doc = o.getField(field);
 				if (!doc.isEmpty())
 					data = new String(doc.getDocument(getGrant()).getBytes(true));
 			}

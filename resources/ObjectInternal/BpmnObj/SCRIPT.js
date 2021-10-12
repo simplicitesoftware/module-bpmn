@@ -6,7 +6,7 @@
 			if (p && o.isMainInstance()) {
 				p.form.beforesave = function(ctn, obj, rowId, bscbk) {
 					BpmnExt.saveXML(xml => {
-						let doc = 'bpmnObjDocument';
+						let doc = 'bpmnObjXml';
 						obj.getField(doc).value({
 							object: obj.getName(),
 							rowid: obj.getRowId(),
