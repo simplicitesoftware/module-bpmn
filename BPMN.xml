@@ -263,7 +263,6 @@
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>BpmnObj</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -289,6 +288,7 @@
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -341,6 +341,7 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
@@ -370,6 +371,7 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
@@ -399,6 +401,7 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
