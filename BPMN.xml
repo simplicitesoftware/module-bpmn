@@ -91,7 +91,7 @@
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fld_name oldvalue="bpmnObjDiagramSvg">bpmnObjSvg</fld_name>
+		<fld_name>bpmnObjSvg</fld_name>
 		<fld_dbname>bpmn_obj_svg</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
@@ -128,7 +128,7 @@
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fld_name oldvalue="bpmnObjDocument">bpmnObjXml</fld_name>
+		<fld_name>bpmnObjXml</fld_name>
 		<fld_dbname>bpmn_obj_xml</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
@@ -222,7 +222,7 @@
 		<obd_view_id.viw_name/>
 		<obd_nohome>1</obd_nohome>
 		<obd_icon>fas/project-diagram</obd_icon>
-		<obd_order>87500</obd_order>
+		<obd_order>58100</obd_order>
 		<obd_domain_id.obd_name/>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
@@ -246,7 +246,7 @@
 	<name>ObjectInternal</name>
 	<action>upsert</action>
 	<data>
-		<obo_name oldvalue="TestBPMNObj">BpmnObj</obo_name>
+		<obo_name>BpmnObj</obo_name>
 		<obo_dbtable>bpmn_obj</obo_dbtable>
 		<obo_role>OBJ</obo_role>
 		<obo_class/>
@@ -263,6 +263,7 @@
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>BpmnObj</obo_template_id.tpl_name>
+		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -288,7 +289,6 @@
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
-		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -341,7 +341,6 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
@@ -371,7 +370,6 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
@@ -401,7 +399,6 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>BpmnObj-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
@@ -473,13 +470,35 @@
 	</data>
 </object>
 <object>
+	<name>DocIndex</name>
+	<action>upsert</action>
+	<data>
+		<din_name>B-bpmnObjSvg</din_name>
+		<din_field_id.fld_name/>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-bpmnObjXml</din_name>
+		<din_field_id.fld_name/>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>Map</name>
 	<action>upsert</action>
 	<data>
 		<map_domain_id.obd_name>BpmnDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>BpmnExt</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>87510</map_order>
+		<map_order>58110</map_order>
 		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
@@ -487,7 +506,7 @@
 		<map_domain_id.obd_name>BpmnDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>BpmnObj</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>87520</map_order>
+		<map_order>58120</map_order>
 		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
@@ -746,6 +765,38 @@
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Objet externe BPMN</tsl_value>
 		<tsl_help/>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateDocIndex</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-bpmnObjSvg</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-bpmn obj svg</tsl_value>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-bpmnObjXml</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-bpmn obj xml</tsl_value>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-bpmnObjSvg</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-bpmn obj svg</tsl_value>
+		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-bpmnObjXml</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-bpmn obj xml</tsl_value>
 		<row_module_id.mdl_name>BPMN</row_module_id.mdl_name>
 	</data>
 </object>
